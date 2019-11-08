@@ -1,0 +1,12 @@
+#!/bin/bash
+PATH+=$PATH:~/n/bin
+PATH1=`pwd`
+PATH2=${PATH1%.git}
+PROJECT_NAME=${PATH2##*/}
+unset GIT_DIR
+cd ~/$PROJECT_NAME
+git fetch -p
+EGG_SERVER_ENV=prod
+git pull && npm install --production &&  npm restart
+
+
