@@ -7,6 +7,4 @@ unset GIT_DIR
 cd ~/$PROJECT_NAME
 git fetch -p
 EGG_SERVER_ENV=prod
-git pull && npm install --production &&  npm restart
-
-
+git pull && npm install --production &&  npm restart --title=$PROJECT_NAME
