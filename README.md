@@ -20,3 +20,4 @@
 - post-receive (git仓库自动部署钩子脚本)
 - source-list (apt源仓库)
 - ssr.sh (shadowsocksR安装脚本)
+- profile.json (windows terminal配置文件)
