@@ -14,7 +14,6 @@
 10 安装nodejs:  sudo apt install make && curl -L https://git.io/n-install | bash && source .bashrc
 
 ## 配置文件说明
-- cvim.conf (chrome cvim 插件配置)
 - default.conf (nginx配置)
 - n-install.sh (node版本安装脚本)
 - post-receive (git仓库自动部署钩子脚本)
