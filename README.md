@@ -20,3 +20,4 @@
 - source-list (apt源仓库)
 - ssr.sh (shadowsocksR安装脚本)
 - profile.json (windows terminal配置文件)
+- commitizen.sh (全局安转git提交格式规范插件commitizen)
