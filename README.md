@@ -1,11 +1,11 @@
 1.设置Linux默认编辑器：update-alternatives --config editor
 2.创建用户adduser yong设置密码
-3.添加用户到sudo组: vim /etc/group在sudo组后添加用户yong
+3.添加用户到sudo组: adduser yong sudo 
 4.登录yong生成用户密钥 ssh-keygen
 5.sudo visudo 编辑sudo组用户无需输入密码执行sudu操作 %sudo ALL=(ALL:ALL) NOPASSWD:  ALL
 6.更换apt源
     1) cd /etc/apt/ && mv ./sources-list sources-list.backup (备份源文件)
-    2) touch sources-list // 添加新的源文件并粘贴中科大镜像源到新的源文件中保存
+    2) cp ~/config-backup/sources-list /etc/apt (设置新的源服务器)
     3) sudo apt update 更新源
 
 7 安装nginx; sudo apt install nginx
