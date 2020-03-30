@@ -2,10 +2,10 @@
 2.创建用户adduser yong设置密码
 3.添加用户到sudo组: adduser yong sudo 
 4.登录yong生成用户密钥 ssh-keygen
-5.sudo visudo 编辑sudo组用户无需输入密码执行sudu操作 %sudo ALL=(ALL:ALL) NOPASSWD:  ALL
+5.sudo visudo 编辑sudo组用户无需输入密码执行sudu操作 %sudo ALL=(ALL:ALL) NOPASSWD:ALL
 6.更换apt源
-    1) cd /etc/apt/ && mv ./sources-list sources-list.backup (备份源文件)
-    2) cp ~/config-backup/sources-list /etc/apt (设置新的源服务器)
+    1) cd /etc/apt/ && mv ./sources.list sources.list.backup (备份源文件)
+    2) cp ~/config-backup/sources.list /etc/apt (设置新的源服务器)
     3) sudo apt update 更新源
 
 7 安装nginx; sudo apt install nginx
@@ -22,4 +22,5 @@
 - profile.json (windows terminal配置文件)
 - commitizen.sh (全局安转git提交格式规范插件commitizen)
 - CapsLock2Esc.reg (windows改键注册表，双击重启系统即可互换 CapsLock与 Esc键)
-
+- v2ray.sh (v2ray管理脚本)
+- .gitconfig (git配置文件)
