@@ -22,5 +22,5 @@
 - profile.json (windows terminal配置文件)
 - commitizen.sh (全局安转git提交格式规范插件commitizen)
 - CapsLock2Esc.reg (windows改键注册表，双击重启系统即可互换 CapsLock与 Esc键)
-- v2ray.sh (v2ray管理脚本)
+- v2ray-install.sh (v2ray官网安装脚本)
 - .gitconfig (git配置文件)
