@@ -24,3 +24,4 @@
 - CapsLock2Esc.reg (windows改键注册表，双击重启系统即可互换 CapsLock与 Esc键)
 - v2ray-install.sh (v2ray官网安装脚本)
 - .gitconfig (git配置文件)
+- config.json (v2ray配置文件)
