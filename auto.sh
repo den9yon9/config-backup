@@ -2,7 +2,7 @@
 chmod 777 -R .
 
 # 备份源文件
-mv /etc/apt/sources.list sources.list.backup
+mv /etc/apt/sources.list /etc/apt/sources.list.backup
 # 设置国内源
 cp ~/config-backup/apt/sources.list /etc/apt/
 # 更新源
