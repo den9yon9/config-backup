@@ -1,3 +1,6 @@
+# 给脚本加执行权限
+chmod 777 -R .
+
 # 备份源文件
 mv /etc/apt/sources.list sources.list.backup
 # 设置国内源
