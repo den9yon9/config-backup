@@ -25,3 +25,6 @@ chmod a+x ./config-backup/n-install.sh && echo y | ./config-backup/n-install.sh 
 
 # 防火墙开放22端口,80端口,443端口,并启用
 ufw allow 22 && ufw allow 80 && ufw allow 443  && echo y | ufw enable
+
+# 安装加速器
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
