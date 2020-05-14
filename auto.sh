@@ -40,6 +40,8 @@ if [ -d /mnt/c ]; then
     echo 'alias o=explorer.exe' >> ~/.bashrc
 # 非wsl
 else
+    # 设置网站首页
+    echo '<h1>hello world</h1>' > /var/www/index.html
     # 安装v2ray
     ./config-backup/v2ray/v2ray-install.sh -y 
     # 配置v2ray
