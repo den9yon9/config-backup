@@ -1,11 +1,13 @@
 [user]
-	email = den9yon9@gmail.com
 	name = yong
+	email = den9yon9@gmail.com
 [alias]
-	s = status
-	l = log --oneline --color
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	co = checkout
 	ci = commit
 	br = branch
+	s = status
+	l = log --oneline --color
 	unstage = reset HEAD
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[credential]
+	helper = store
