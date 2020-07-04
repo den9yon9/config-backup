@@ -54,7 +54,8 @@ else
     ufw allow 22 && ufw allow 80 && ufw allow 443  && echo y | ufw enable
     # 安装v2ray管理服务
     git clone https://github.com/den9yon9/v2ray-admin.git
-    cd v2ray && npm install && npm start
+    cd ~/v2ray-admin && npm install && npm start
     # 安装加速器
     wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod a+x ./tcp.sh && ./tcp.sh
 fi
+
