@@ -1,5 +1,5 @@
 # 给脚本加执行权限
-chmod 777 -R *.sh
+chmod a+x  -R .
 
 # 备份源文件
 mv /etc/apt/sources.list /etc/apt/sources.list.backup
