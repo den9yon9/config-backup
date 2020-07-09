@@ -19,6 +19,8 @@ apt install make
 
 # 安装nodejs
 echo y | ./config-backup/nodejs/n-install.sh && source ~/.bashrc && echo nodejs安装成功
+# 配置npmrc
+cp ./config-backup/node/.npmrc ~
 # 安装commitizen
 ./config-backup/nodejs/commitizen.sh
 # 安装http-server
