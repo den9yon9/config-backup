@@ -23,7 +23,7 @@ apt install curl
 # 安装nodejs
 echo y | ./config-backup/nodejs/n-install.sh && source ~/.bashrc && echo nodejs安装成功
 # 配置npmrc
-cp ./config-backup/node/.npmrc ~
+cp ./config-backup/nodejs/.npmrc ~
 
 # 安装commitizen
 # ./config-backup/nodejs/commitizen.sh
@@ -42,10 +42,10 @@ nginx -s reload
 
 # wsl
 if [ -d /mnt/c ]; then
-    echo 'alias cdr="cd /mnt/c/Users/yong/repositories"' >> ~/.bashrc
-    echo 'alias cdd="cd /mnt/c/Users/yong/Desktop"' >> ~/.bashrc
-    echo 'alias o=explorer.exe' >> ~/.bashrc
-    echo 'alias rm=rm -r '>> ~/.bashrc
+    echo 'alias cdr="cd /mnt/c/Users/den9y/repositories"' >> ~/.bashrc
+    echo 'alias cdd="cd /mnt/c/Users/den9y/Desktop"' >> ~/.bashrc
+    echo 'alias open=explorer.exe' >> ~/.bashrc
+    echo 'alias rm="rm -r "'>> ~/.bashrc
 # 非wsl
 else
     # 设置网站首页
