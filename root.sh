@@ -1,12 +1,12 @@
 # 给脚本加执行权限
-chmod a+x  -R .
+chmod a+x  ./**/*.sh
 
 # 备份源文件
 mv /etc/apt/sources.list /etc/apt/sources.list.backup
 # 设置国内源
 cp ~/config-backup/apt/sources.list /etc/apt/
 # 更新源
-sudo apt update 
+apt update 
 
 # 设置Linux默认编辑器
 echo 3 | update-alternatives --config editor
@@ -29,7 +29,7 @@ cp ./config-backup/nodejs/.npmrc ~
 # ./config-backup/nodejs/commitizen.sh
 
 # 安装http-server
-./config-backup/nodejs/http-server.sh
+# ./config-backup/nodejs/http-server.sh
 
 # 安装nginx
 apt install nginx -y 
@@ -42,8 +42,8 @@ nginx -s reload
 
 # wsl
 if [ -d /mnt/c ]; then
-    echo 'alias cdr="cd /mnt/c/Users/den9y/repositories"' >> ~/.bashrc
-    echo 'alias cdd="cd /mnt/c/Users/den9y/Desktop"' >> ~/.bashrc
+    echo 'alias cdr="cd /mnt/c/Users/yong/repositories"' >> ~/.bashrc
+    echo 'alias cdd="cd /mnt/c/Users/yong/Desktop"' >> ~/.bashrc
     echo 'alias open=explorer.exe' >> ~/.bashrc
     echo 'alias rm="rm -r "'>> ~/.bashrc
 # 非wsl
