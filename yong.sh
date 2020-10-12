@@ -6,6 +6,9 @@ echo y | ./config-backup/nodejs/n-install.sh && source ~/.bashrc && echo nodejs�
 # 配置npmrc
 cp ./config-backup/nodejs/.npmrc ~
 
+# 配置git
+cp ./config-backup/git/.gitconfig ~ && echo "git配置成功"
+
 # 安装commitizen
 # ./config-backup/nodejs/commitizen.sh
 
@@ -18,8 +21,5 @@ if [ -d /mnt/c ]; then
     echo 'alias cdd="cd /mnt/c/Users/yong/Desktop"' >> ~/.bashrc
     echo 'alias open=explorer.exe' >> ~/.bashrc
     echo 'alias rm="rm -r "'>> ~/.bashrc
-# 非wsl
-else
-    
 fi
 
