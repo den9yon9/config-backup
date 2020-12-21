@@ -57,7 +57,7 @@ else
     # 启动v2ray
     service v2ray start && echo -e '\nv2ray启动成功'
     # 防火墙开放22端口,80端口,443端口,并启用
-    ufw allow 22 && ufw allow 80 && ufw allow 443  && echo y | ufw enable
+    ufw allow 22 && ufw allow 80 && ufw allow 443 && ufw allow 20520 && echo y | ufw enable
     # 下载加速器
     wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" 
     # 安装加速器
